@@ -7,6 +7,7 @@
 
 <style>
 
+
 body {
     margin:0;
     font-family: '맑은 고딕', sans-serif;
@@ -124,6 +125,33 @@ section h2 {
   transform: translateY(-2px);
 }
 
+.lightbox {
+    display:none;
+    position:fixed;
+    z-index:9999;
+    padding-top:50px;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background:rgba(0,0,0,0.9);
+}
+
+.lightbox img {
+    display:block;
+    margin:auto;
+    max-width:1000px;
+    height:80vh;
+    object-fit:contain;
+    border-radius:10px;
+}
+
+.lightbox:target {
+    display:block;
+}
+
+
 
 </style>
 
@@ -150,38 +178,77 @@ section h2 {
 <section>
     <h2>시공사례</h2>
 
-    <div class="project">
+<div class="project">
         <h3>광주 운암자이 포레나</h3>
         <div class="grid">
-            <div class="card"><img src="img1.png"></div>
-            <div class="card"><img src="img2.png"></div>
+            <div class="card"><a href="#img1-popup"><img src="img1.png"></a></div>
+            <div class="card"><a href="#img2-popup"><img src="img2.png"></a></div>
         </div>
     </div>
 
     <div class="project">
         <h3>인덕원자이 SK VIEW</h3>
         <div class="grid">
-            <div class="card"><img src="img3.jpg"></div>
-            <div class="card"><img src="img4.jpg"></div>
+            <div class="card"><a href="#img3-popup"><img src="img3.jpg"></a></div>
+            <div class="card"><a href="#img4-popup"><img src="img4.jpg"></a></div>
         </div>
     </div>
 
     <div class="project">
         <h3>대구 범어 W</h3>
         <div class="grid">
-            <div class="card"><img src="img5.png"></div>
-            <div class="card"><img src="img6.png"></div>
+            <div class="card"><a href="#img5-popup"><img src="img5.png"></a></div>
+            <div class="card"><a href="#img6-popup"><img src="img6.png"></a></div>
         </div>
     </div>
+
+   <div class="project">
+       <h3>크리스탈밸리 CC</h3>
+       <div class="grid">
+           <div class="card"><a href="#img13-popup"><img src="img13.png"></a></div>
+           <div class="card"><a href="#img14-popup"><img src="img14.png"></a></div>
+           <div class="card"><a href="#img15-popup"><img src="img15.png"></a></div>
+           <div class="card"><a href="#img16-popup"><img src="img16.jpg"></a></div>
+       </div>
+   </div>
 
     <div class="project">
         <h3>해운대 LCT</h3>
         <div class="grid">
-            <div class="card"><img src="img7.jpg"></div>
-            <div class="card"><img src="img8.jpg"></div>
-            
+            <div class="card"><a href="#img7-popup"><img src="img7.png"></a></div>
+            <div class="card"><a href="#img8-popup"><img src="img8.png"></a></div>
+            <div class="card"><a href="#img9-popup"><img src="img9.jpg"></a></div>
+            <div class="card"><a href="#img10-popup"><img src="img10.jpg"></a></div>
+            <div class="card"><a href="#img11-popup"><img src="img11.jpg"></a></div>
+            <div class="card"><a href="#img12-popup"><img src="img12.jpg"></a></div>
         </div>
     </div>
+
+    <!-- 확대용 -->
+
+    <div id="img1-popup" class="lightbox"><a href="#"><img src="img1.png"></a></div>
+    <div id="img2-popup" class="lightbox"><a href="#"><img src="img2.png"></a></div>
+
+    <div id="img3-popup" class="lightbox"><a href="#"><img src="img3.jpg"></a></div>
+    <div id="img4-popup" class="lightbox"><a href="#"><img src="img4.jpg"></a></div>
+
+    <div id="img5-popup" class="lightbox"><a href="#"><img src="img5.png"></a></div>
+    <div id="img6-popup" class="lightbox"><a href="#"><img src="img6.png"></a></div>
+
+    <div id="img7-popup" class="lightbox"><a href="#"><img src="img7.png"></a></div>
+    <div id="img8-popup" class="lightbox"><a href="#"><img src="img8.png"></a></div>
+
+    <div id="img9-popup" class="lightbox"><a href="#"><img src="img9.jpg"></a></div>
+    <div id="img10-popup" class="lightbox"><a href="#"><img src="img10.jpg"></a></div>
+
+    <div id="img11-popup" class="lightbox"><a href="#"><img src="img11.jpg"></a></div>
+    <div id="img12-popup" class="lightbox"><a href="#"><img src="img12.jpg"></a></div>    
+
+
+    <div id="img13-popup" class="lightbox"><a href="#"><img src="img13.png"></a></div>
+    <div id="img14-popup" class="lightbox"><a href="#"><img src="img14.png"></a></div>
+    <div id="img15-popup" class="lightbox"><a href="#"><img src="img15.png"></a></div>
+    <div id="img16-popup" class="lightbox"><a href="#"><img src="img16.jpg"></a></div>
 
 </section>
 
@@ -195,7 +262,7 @@ section h2 {
     </p>
 
  <a href="https://pf.kakao.com/_ydFTX" target="_blank" class="kakao-btn">
-  카카오톡 문의하기
+  카카오톡 상담하기
   </a>
   </div>
 
